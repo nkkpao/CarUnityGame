@@ -256,7 +256,7 @@ public partial class CarController : Car //AxelInfo
 
     public void IncreaseSpeed()
     {
-        maxMotorTorque *= 4
+        maxMotorTorque *= 4;
     }
 
     public void DecreaseSpeed()
