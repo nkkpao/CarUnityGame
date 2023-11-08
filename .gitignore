@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+/CarGame/[Ll]ibrary/
+/CarGame/[Tt]emp/
+/CarGame/[Oo]bj/
+/CarGame/[Bb]uild/
+/CarGame/[Bb]uilds/
+/CarGame/[Ll]ogs/
+/CarGame/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -25,7 +25,7 @@
 
 # Visual Studio cache directory
 .vs/
-
+/CarGame/.vs/
 # Gradle cache directory
 .gradle/
 
