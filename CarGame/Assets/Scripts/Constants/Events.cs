@@ -1,18 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Events : MonoBehaviour
+public static class Events
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static Action<string> UsernameSubmitted;
+    public static Action<int> CarChosen;
+    public static Action BackButtonPressed;
+    public static Action<Color, float, float> CarColorChosen;
+    public static Action<Material> RimColorChosen;
+    public static Action OkButtonClicked;
+    public static Action CancelButtonClicked;
+    public static Action PurchaseButtonClicked;
+    public static Action LeftOrRightButtonClicked;
+    public static Action SaveSlotCliked;
+    public static Action RaceStarted;
+    public static Action<int> LapCompleted;
+    public static Action RaceCompleted;
+    public static Action<CarController> CarSpawnedToTrack;
 }
