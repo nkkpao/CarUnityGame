@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-    float initiallyYPos;
-    bool hasInitiallyYPosBeenSet;
+    float originalYPos;
+    bool hasOriginalYPosBeenSet;
 
     public virtual void Start()
     {
-        Invoke("SetInitiallyYPos", 1.5f);
+        Invoke("SetOriginalYPos", 1.5f);
     }
 
     public virtual void Update()
     {
-        if(hasInitiallyYPosBeenSet)
+        if(hasOriginalYPosBeenSet)
         {
+            Vector3 positionWithConstantYPos = new Vector3(transform.position.x,
+                                                            originalYPos, transform.position.z);
+            transform.position = positionWithConstantYPos;
 
         }
+    }
+
+    private void SetOriginalYPos()
+    {
+        originalYPos = transform.position.y;
+        hasOriginalYPosBeenSet = true;
     }
 }

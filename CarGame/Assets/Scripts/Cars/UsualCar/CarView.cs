@@ -9,7 +9,7 @@ public class CarView : MonoBehaviour
     [SerializeField] List<GameObject> wheels;
     [SerializeField] List<MeshRenderer> rimMeshes;
 
-    /*public void SetCarColorAndRims()
+    public void SetCarColorAndRims()
     {
         Material[] carBodyMaterials = CarBodyMaterials;
         foreach (Material material in carBodyMaterials)
@@ -21,7 +21,7 @@ public class CarView : MonoBehaviour
             RimMaterial = GameManager.RimMaterial;
         }
 
-    }*/
+    }
 
     public void SetCarColor(Color color)
     {
