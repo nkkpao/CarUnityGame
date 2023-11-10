@@ -41,7 +41,7 @@ public partial class CarController : Car //AxelInfo
         Events.RaceStarted += HandleRaceStarted;
         if(!isAIControlledCar)
         {
-            carModel.SetCarLabel(GameManager.GetUsername());
+            //carModel.Label = GameManager.GetUsername();
         }
         if(nitrous1 != null)
         {
@@ -88,7 +88,7 @@ public partial class CarController : Car //AxelInfo
         }
         else if(Input.GetKeyDown(KeyCode.DownArrow))
         {
-            HandleBreakPedal();
+            HandleBrakePedal();
         }
         brakeLight1.SetActive(Input.GetKey(KeyCode.DownArrow));
         brakeLight2.SetActive(Input.GetKey(KeyCode.DownArrow));
@@ -232,7 +232,7 @@ public partial class CarController : Car //AxelInfo
         rigidbody.constraints = RigidbodyConstraints.FreezePositionX 
                                 | RigidbodyConstraints.FreezePositionZ 
                                 | RigidbodyConstraints.FreezePositionY;
-        agent.enabled = true;
+        //agent.enabled = true;
         pathFollower.enabled = true;
     }
 
